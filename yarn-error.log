@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/local/Cellar/node/12.8.0/bin/node /usr/local/bin/yarn add stripe --save
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/dunice/Desktop/myapp/node_modules/.bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.8.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/dunice/Desktop/myapp/package.json: Unexpected token } in JSON at position 267
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "myapp",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "debug": "~2.6.9",
+      "express": "~4.16.1",
+      "http-errors": "~1.6.3",
+      "morgan": "~1.9.1",
+    },
+    "devDependencies": {
+      "eslint": "^6.3.0",
+      "eslint-config-airbnb-base": "^14.0.0",
+      "eslint-plugin-import": "^2.18.2",
+      "husky": "^3.0.5",
+      "sequelize-cli": "^5.5.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
